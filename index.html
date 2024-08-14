@@ -22,18 +22,18 @@
       <!-- card -->
       <div class="flex-1 flex justify-center items-center">
         <div
-          class="bg-gradient-to-b from-black to-green-900 w-2/3 mx-auto p-8 rounded"
+          class="bg-gradient-to-b from-black to-green-900 w-3/4 sm:w-2/3 mx-auto p-1 sm:p-8 rounded"
         >
           <div><h1 class="text-gray-500 text-2xl font-bold">Amount</h1></div>
           <!-- input  -->
-          <div class="text-white text-xl font-bold relative">
+          <div class="text-white sm:text-xl font-bold relative">
             <input
               id="input"
               type="text"
               class="bg-transparent placeholder-slate-400 w-full border-none outline-none"
               placeholder="type quantity || default 1"
             />
-            <div class="w-8 absolute top-0 right-8">
+            <div class="w-6 sm:w-8 absolute top-0 right-0 sm:right-8">
               <button id="switchBtn"><img src="./image/switch.png" /></button>
             </div>
             <div class="h-1 bg-blue-900 mt-2"></div>
@@ -41,7 +41,7 @@
           <!-- select /button / result-->
           <div class="w-full flex justify-center items-center">
             <div
-              class="w-2/3 flex flex-col justify-center items-center gap-8 mt-8"
+              class="sm:w-2/3 flex flex-col justify-center items-center gap-8 mt-8"
             >
               <div class="w-full relative">
                 <div class="absolute top-0.5 left-1.5">
@@ -54,11 +54,7 @@
                   <select
                     id="selectFrom"
                     class="w-full bg-black text-gray-100 font-semibold py-2 pl-10 border border-white rounded"
-                  >
-                    <!-- <option value="USD" selected>
-                      USD || United States Dollar
-                    </option> -->
-                  </select>
+                  ></select>
                 </div>
               </div>
               <div class="w-full relative">
@@ -83,7 +79,7 @@
                 <button id="btn">Convert</button>
               </div>
 
-              <div class="w-full text-center text-white text-2xl font-bold">
+              <div class="w-full text-center text-white sm:text-2xl font-bold">
                 <h1 id="resultText">1 USD = EGP</h1>
               </div>
             </div>
